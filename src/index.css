@@ -2,6 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --background: 43 100% 95%;
+    --foreground: 43 5% 15%;
+    --card: 43 50% 92%;
+    --card-foreground: 43 5% 15%;
+    --popover: 43 100% 95%;
+    --popover-foreground: 43 100% 9%;
+    --primary: 43 74% 66%;
+    --primary-foreground: 43 45% 25%;
+    --secondary: 43 30% 85%;
+    --secondary-foreground: 43 5% 25%;
+    --muted: 43 30% 88%;
+    --muted-foreground: 43 5% 40%;
+    --accent: 43 30% 85%;
+    --accent-foreground: 43 5% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 43 30% 82%;
+    --input: 43 30% 82%;
+    --ring: 43 74% 66%;
+    --radius: 0.75rem;
+    --chart-1: 43 74% 66%;
+    --chart-2: 200 74% 66%;
+    --chart-3: 280 74% 66%;
+    --chart-4: 120 74% 66%;
+    --chart-5: 320 74% 66%;
+
+    /* Sticky note colors */
+    --note-yellow: 48 95% 85%;
+    --note-yellow-border: 48 85% 75%;
+    --note-pink: 330 85% 88%;
+    --note-pink-border: 330 75% 78%;
+    --note-blue: 200 85% 88%;
+    --note-blue-border: 200 75% 78%;
+    --note-green: 120 85% 88%;
+    --note-green-border: 120 75% 78%;
+    --note-orange: 25 95% 85%;
+    --note-orange-border: 25 85% 75%;
+  }
+
+  .dark {
+    --background: 43 10% 9%;
+    --foreground: 43 5% 90%;
+    --card: 43 10% 9%;
+    --card-foreground: 43 5% 90%;
+    --popover: 43 10% 4%;
+    --popover-foreground: 43 5% 90%;
+    --primary: 43 74% 66%;
+    --primary-foreground: 43 45% 25%;
+    --secondary: 43 10% 15%;
+    --secondary-foreground: 43 5% 90%;
+    --muted: 43 10% 15%;
+    --muted-foreground: 43 5% 60%;
+    --accent: 43 10% 15%;
+    --accent-foreground: 43 5% 90%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 85% 90%;
+    --border: 43 10% 15%;
+    --input: 43 10% 15%;
+    --ring: 43 74% 66%;
+    --chart-1: 43 74% 66%;
+    --chart-2: 200 74% 66%;
+    --chart-3: 280 74% 66%;
+    --chart-4: 120 74% 66%;
+    --chart-5: 320 74% 66%;
+
+    /* Sticky note colors for dark mode */
+    --note-yellow: 48 85% 75%;
+    --note-yellow-border: 48 75% 65%;
+    --note-pink: 330 75% 78%;
+    --note-pink-border: 330 65% 68%;
+    --note-blue: 200 75% 78%;
+    --note-blue-border: 200 65% 68%;
+    --note-green: 120 75% 78%;
+    --note-green-border: 120 65% 68%;
+    --note-orange: 25 85% 75%;
+    --note-orange-border: 25 75% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
