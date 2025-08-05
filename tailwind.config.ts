@@ -52,6 +52,27 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Sticky note colors
+				'note-yellow': {
+					DEFAULT: 'hsl(var(--note-yellow))',
+					foreground: 'hsl(var(--note-yellow-foreground))'
+				},
+				'note-pink': {
+					DEFAULT: 'hsl(var(--note-pink))',
+					foreground: 'hsl(var(--note-pink-foreground))'
+				},
+				'note-blue': {
+					DEFAULT: 'hsl(var(--note-blue))',
+					foreground: 'hsl(var(--note-blue-foreground))'
+				},
+				'note-green': {
+					DEFAULT: 'hsl(var(--note-green))',
+					foreground: 'hsl(var(--note-green-foreground))'
+				},
+				'note-orange': {
+					DEFAULT: 'hsl(var(--note-orange))',
+					foreground: 'hsl(var(--note-orange-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

@@ -2,41 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Sticky Notes Design System - Warm, friendly colors inspired by real Post-it notes */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Main app background - soft cork board texture */
+    --background: 42 25% 96%;
+    --foreground: 210 15% 25%;
 
+    /* Card backgrounds */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 15% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary brand color - warm orange for buttons */
+    --primary: 25 85% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - soft gray */
+    --secondary: 210 15% 92%;
+    --secondary-foreground: 210 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 15% 92%;
+    --muted-foreground: 210 10% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 15% 88%;
+    --accent-foreground: 210 15% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 15% 88%;
+    --input: 210 15% 88%;
+    --ring: 25 85% 60%;
 
-    --radius: 0.5rem;
+    /* Sticky note colors - bright and cheerful */
+    --note-yellow: 51 100% 85%;
+    --note-yellow-foreground: 45 30% 25%;
+    --note-pink: 330 80% 88%;
+    --note-pink-foreground: 330 30% 25%;
+    --note-blue: 200 80% 88%;
+    --note-blue-foreground: 200 30% 25%;
+    --note-green: 120 50% 85%;
+    --note-green-foreground: 120 30% 25%;
+    --note-orange: 35 85% 85%;
+    --note-orange-foreground: 35 30% 25%;
+
+    /* Shadows for depth */
+    --shadow-note: 0 2px 8px hsla(0, 0%, 0%, 0.1);
+    --shadow-note-hover: 0 4px 12px hsla(0, 0%, 0%, 0.15);
+
+    /* Animations */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.375rem;
 
     --sidebar-background: 0 0% 98%;
 
